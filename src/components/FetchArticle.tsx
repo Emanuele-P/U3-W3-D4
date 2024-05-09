@@ -36,7 +36,7 @@ return (
       <Row className="justify-content-center">
         {articles.map(article => (
           <SingleArticle key={article.id} article={article} />
-        ))}
+        )).slice(0,8)}
       </Row>
     </Container>
   );

@@ -32,7 +32,7 @@ const Details = () => {
             <Container>
                 <Row>
                     <Col className="text-center">
-                        <p>No content available</p>
+                        <p>No available content</p>
                     </Col>
                 </Row>
             </Container>
@@ -40,14 +40,16 @@ const Details = () => {
     }
 
     return (
+        
         <Container>
             <Row>
                 <Col xs={12} md={8} className="my-3">
                     <Image src={article.image_url} alt={article.title} fluid />
                 </Col>
                 <Col xs={12} md={4}>
-                    <h2>{article.title}</h2>
+                    <h2 className="mt-2">{article.title}</h2>
                     <p>{article.summary}</p>
+                    {/* <p>{article.published_at}</p> */}
                 </Col>
             </Row>
         </Container>

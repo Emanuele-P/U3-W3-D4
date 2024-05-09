@@ -8,9 +8,9 @@ interface ArticleProps {
 
 const SingleArticle = (props: ArticleProps) => {
     return (
-        <Col xs={12} md={4} className="text-center">
+        <Col xs={12} md={6} lg={3} className="text-center">
              <Link to={`/article/${props.article.id}`} style={{ textDecoration: 'none' }}>
-          <Card>
+          <Card className="article">
             <Card.Img variant="top" src={props.article.image_url} />
             <Card.Body>
               <Card.Title>{props.article.title}</Card.Title>
